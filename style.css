@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+@import url('./styles/header.css');
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --cor-da-secao: #FFFFFF;
+    --cor-do-menu: #000000;
+    --cor-de-texto: #EB9B00;
+    --cor-de-texto-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --cor-de-titulo: ;
+
+    --fonte-de-titulo: 'Josefin Sans', sans-serif;
+    --fonte-de-paragrafo: ;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+
