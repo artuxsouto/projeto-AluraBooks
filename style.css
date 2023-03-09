@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 @import url('./styles/header.css');
+@import url('./styles/banner.css');
+@import url('./styles/carrossel.css');
+@import url('./styles/topicos.css');
+@import url('./styles/contato.css');
+@import url('./styles/rodape.css');
 
 :root {
     --cor-de-fundo: #EBECEE;
@@ -7,14 +11,17 @@
     --cor-do-menu: #000000;
     --cor-de-texto: #EB9B00;
     --cor-de-texto-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
-    --cor-de-titulo: ;
+    --cor-de-subtitulo: #002F52;
+    --cor-texto-icone: #474646;
+    --cor-titulo-rodape: #858585;
 
-    --fonte-de-titulo: 'Josefin Sans', sans-serif;
-    --fonte-de-paragrafo: ;
+    --fonte-principal: 'Poppins';
+    --fonte-secundaria: 'Josefin Sans';
 }
 
 body {
     background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
-
-
