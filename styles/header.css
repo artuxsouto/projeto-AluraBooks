@@ -7,6 +7,15 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabecalho__menu-hamburger {
+    background-image: url("../assets/Menu Aberto.svg");
+
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--cor-de-texto-degrade);
+}
+
 .cabecalho {
     background-color: var(--cor-da-secao);
     display: flex;
@@ -60,15 +69,10 @@
     text-transform: uppercase;
 }
 
-.container__botao {
-    display: none;
-}
-
-.container__titulo {
-    display: none;
-}
-
-.opcoes {
+.container__botao,
+.container__titulo,
+.opcoes,
+.container__texto {
     display: none;
 }
 
@@ -76,7 +80,7 @@
     .container__titulo,
     .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .container__titulo {
@@ -102,11 +106,9 @@
         color: var(--cor-do-menu);
     }
     
-    .cabecalho__menu-hamburger {
-        display: none;
-    }
-
-    .container__imagem-icone-transparente {
+    .cabecalho__menu-hamburger,
+    .container__imagem-icone-transparente,
+    .opcoes__botao {
         display: none;
     }
 
@@ -115,7 +117,43 @@
         width: auto;
     }
 
-    .opcoes__botao {
-        display: none;
+    .opcoes__botao:checked~.opcoes__rotulo>.opcoes__item {
+        background: var(--cor-de-texto-degrade);
+        color: var(--cor-da-secao);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background-color: var(--cor-de-texto-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--cor-da-secao);
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor-do-menu);
+        font-size: 20px;
+    }
+
+    .container__texto {
+        display: block;
+    }
+
+    .cabecalho {
+        padding: 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
     }
 }
