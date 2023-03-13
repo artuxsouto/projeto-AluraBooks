@@ -19,6 +19,15 @@
     --fonte-secundaria: 'Josefin Sans';
 }
 
+.dark-mode:root {
+    --cor-de-fundo: #474646;
+    --cor-da-secao: #899095 ;
+    --cor-de-texto: #DEE2E6;
+    --cor-titulo-rodape: #2C74B3;
+    --cor-texto-icone: #205295;
+    --cor-de-subtitulo: #002F52;
+}
+
 body {
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-principal);

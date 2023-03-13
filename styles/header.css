@@ -72,7 +72,9 @@
 .container__botao,
 .container__titulo,
 .opcoes,
-.container__texto {
+.container__texto,
+.dark-mode,
+.dark-mode__botao {
     display: none;
 }
 
@@ -143,6 +145,17 @@
         text-decoration: none;
         color: var(--cor-do-menu);
         font-size: 20px;
+    }
+
+    .dark-mode {
+        display: block;
+    }
+
+    .dark-mode__imagem {
+        border: 2px solid var(--cor-de-subtitulo);
+        border-radius: 0.5em;
+        padding: 0.5em;
+        margin-right: 1em;
     }
 
     .container__texto {
